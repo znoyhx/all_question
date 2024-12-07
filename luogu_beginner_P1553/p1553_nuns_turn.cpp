@@ -11,7 +11,7 @@ using namespace std;
 
 int main() {
 
-while(true){
+while(true) {
 	string s;
 	cin >> s;
 	int n = s.size();
@@ -40,18 +40,21 @@ while(true){
 		string s2 = s.substr(s.find('.') + 1);
 		reverse(s1.begin(), s1.end());
 		int a = 0;
-		while (true) {
-			if (s1[a] == '0') {
-				s1.erase(a, 1);
-			} else {
-				break;
-			}
+		if (s1.size() != 1) {
+			while (true) {
+				if (s1[a] == '0') {
+					s1.erase(a, 1);
+				} else {
+					break;
+				}
 
+			}
 		}
 		reverse(s2.begin(), s2.end());
 		if (s2.size() != 1) {
-			int b = s2.size() - 1;
+
 			while (true) {
+				int b = s2.size() - 1;
 				if (s2[b] == '0') {
 					s2.erase(b, 1);
 				} else {
@@ -70,26 +73,29 @@ while(true){
 		//substr右边是开区间，放心用
 		string s2 = s.substr(s.find('/') + 1);
 		reverse(s1.begin(), s1.end());
-		int a = 0;
-		while (true) {
-			if (s1[a] == '0') {
-				s1.erase(a, 1);
-			} else {
-				break;
-			}
+		if (s1.size() != 1) {
+			int a = 0;
+			while (true) {
+				if (s1[a] == '0') {
+					s1.erase(a, 1);
+				} else {
+					break;
+				}
 
+			}
 		}
 
 		reverse(s2.begin(), s2.end());
+		if (s2.size() != 1) {
+			int b = 0;
+			while (true) {
+				if (s2[b] == '0') {
+					s2.erase(b, 1);
+				} else {
+					break;
+				}
 
-		int b = 0;
-		while (true) {
-			if (s2[b] == '0') {
-				s2.erase(b, 1);
-			} else {
-				break;
 			}
-
 		}
 		s = s1 + '/' + s2;
 		cout << s << endl;
@@ -97,23 +103,36 @@ while(true){
 	if (m == 3) {
 
 		reverse(s.begin(), s.end() - 1);
-		int a = 0;
-		while (true) {
+		if (s.size() != 2) {
+			int a = 0;
+			while (true) {
 
-			if (s[a] == '0') {
-				s.erase(a, 1);
-			} else {
-				break;
+				if (s[a] == '0') {
+					s.erase(a, 1);
+				} else {
+					break;
+				}
+
 			}
-
 		}
 		cout << s << endl;
 	}
 	if (m == 0) {
 		reverse(s.begin(), s.end());
+		if (s.size() != 1) {
+			int a = 0;
+			while (true) {
+				if (s[a] == '0') {
+					s.erase(a, 1);
+				} else {
+					break;
+				}
+
+			}
+		}
 		cout << s << endl;
+
 	}
 }
-
 	return 0;
 }
