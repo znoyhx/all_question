@@ -61,6 +61,18 @@ build CMakeFiles/all_question.dir/word_co.cpp.obj: CXX_COMPILER__all_question_un
   OBJECT_DIR = CMakeFiles\all_question.dir
   OBJECT_FILE_DIR = CMakeFiles\all_question.dir
 
+build CMakeFiles/all_question.dir/aaa.cpp.obj: CXX_COMPILER__all_question_unscanned_Debug D$:/clion_heima/all_question/aaa.cpp || cmake_object_order_depends_target_all_question
+  DEP_FILE = CMakeFiles\all_question.dir\aaa.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\all_question.dir
+  OBJECT_FILE_DIR = CMakeFiles\all_question.dir
+
+build CMakeFiles/all_question.dir/luogu_beginner_P1553/p1553_nuns_turn.cpp.obj: CXX_COMPILER__all_question_unscanned_Debug D$:/clion_heima/all_question/luogu_beginner_P1553/p1553_nuns_turn.cpp || cmake_object_order_depends_target_all_question
+  DEP_FILE = CMakeFiles\all_question.dir\luogu_beginner_P1553\p1553_nuns_turn.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\all_question.dir
+  OBJECT_FILE_DIR = CMakeFiles\all_question.dir\luogu_beginner_P1553
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target all_question
@@ -69,7 +81,7 @@ build CMakeFiles/all_question.dir/word_co.cpp.obj: CXX_COMPILER__all_question_un
 #############################################
 # Link the executable all_question.exe
 
-build all_question.exe: CXX_EXECUTABLE_LINKER__all_question_Debug CMakeFiles/all_question.dir/main.cpp.obj CMakeFiles/all_question.dir/word_co.cpp.obj
+build all_question.exe: CXX_EXECUTABLE_LINKER__all_question_Debug CMakeFiles/all_question.dir/main.cpp.obj CMakeFiles/all_question.dir/word_co.cpp.obj CMakeFiles/all_question.dir/aaa.cpp.obj CMakeFiles/all_question.dir/luogu_beginner_P1553/p1553_nuns_turn.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\all_question.dir
